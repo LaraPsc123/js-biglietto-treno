@@ -15,12 +15,26 @@ if (nEta < 18) {
     console.log('basePrice - 0.2')
 }
 
-// calcolare lo sconto
+// calcolare lo sconto del 20%
 let discount = basePrice * 0.2
 
 // prezzo scontato = prezzo intero - sconto
-let discountPrice = basePrice - discount
-console.log(discountPrice)
+let discountPrice1 = basePrice - discount
+console.log(discountPrice1)
+
+// calcolare lo sconto del 40%
+let discount1 = basePrice * 0.4
+
+// prezzo scontato = prezzo intero - sconto
+let discountPrice2 = basePrice - discount1
+console.log(discountPrice2)
+// SE è over 65
+//-- si applica uno sconto del 40%
+if (nEta > 65) {
+    console.log('basePrice - 0.4')
+}
+
+
 
 
 
