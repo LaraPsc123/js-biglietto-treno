@@ -2,22 +2,26 @@
 Sulla base di queste informazioni dovrà calcolare il prezzo totale del viaggio, secondo queste regole:*/
 
 // 1) dichiara la variabile numero di km ed età passeggero
-let nKm = prompt('inserisci un numero intero') // stringa
+let nKm = prompt('inserisci un numero di km intero') // stringa
 let nEta = prompt('inserisci età del passeggero') // stringa
 
 
 // 2) il prezzo del biglietto è definito in base ai km (0.21 € al km)
-let basePrice = 63
+let basePrice = nKm * 0.21 // numero
 console.log(basePrice)
 // SE è minorenne
 // -- si applica uno sconto del 20%
 if (nEta < 18) {
     console.log('basePrice - 0.2')
-
 }
 
 // calcolare lo sconto
 let discount = basePrice * 0.2
+
+// prezzo scontato = prezzo intero - sconto
+let discountPrice = basePrice - discount
+console.log(discountPrice)
+
 
 
 
