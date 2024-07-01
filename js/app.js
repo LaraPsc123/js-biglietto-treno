@@ -11,9 +11,6 @@ let basePrice = nKm * 0.21 // numero
 console.log(basePrice)
 // SE è minorenne
 // -- si applica uno sconto del 20%
-if (nEta < 18) {
-    console.log("Cliente minorenne", discountPrice1)
-}
 
 // calcolare lo sconto del 20%
 let discount = basePrice * 0.2
@@ -21,6 +18,9 @@ let discount = basePrice * 0.2
 // prezzo scontato = prezzo intero - sconto
 let discountPrice1 = basePrice - discount
 console.log(discountPrice1)
+if (nEta < 18) {
+    console.log("Cliente minorenne", discountPrice1)
+}
 
 // calcolare lo sconto del 40%
 let discount1 = basePrice * 0.4
