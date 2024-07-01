@@ -17,7 +17,6 @@ let discount = basePrice * 0.2  // numero
 
 // prezzo scontato = prezzo intero - sconto
 let discountPrice1 = basePrice - discount
-console.log("Cliente minorenne", discountPrice1)
 if (nEta < 18) {
     console.log("Cliente minorenne", discountPrice1)
 }
@@ -27,7 +26,6 @@ let discount1 = basePrice * 0.4 // numero
 
 // prezzo scontato = prezzo intero - sconto
 let discountPrice2 = basePrice - discount1 // numero
-console.log("Cliente over", discountPrice2)
 // SE è over 65
 //-- si applica uno sconto del 40%
 if (nEta > 65) {
