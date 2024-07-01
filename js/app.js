@@ -12,7 +12,7 @@ console.log(basePrice)
 // SE è minorenne
 // -- si applica uno sconto del 20%
 if (nEta < 18) {
-    console.log('basePrice - 0.2')
+    console.log("Cliente minorenne", basePrice - 0.2)
 }
 
 // calcolare lo sconto del 20%
@@ -31,7 +31,7 @@ console.log(discountPrice2)
 // SE è over 65
 //-- si applica uno sconto del 40%
 if (nEta > 65) {
-    console.log('basePrice - 0.4')
+    console.log("Cliente over", basePrice - 0.4)
 }
 
 
