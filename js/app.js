@@ -8,26 +8,26 @@ let nEta = prompt('inserisci età del passeggero') // stringa
 
 // 2) il prezzo del biglietto è definito in base ai km (0.21 € al km)
 let basePrice = nKm * 0.21 // numero
-console.log(basePrice)
+console.log("prezzo base", basePrice)
 // SE è minorenne
 // -- si applica uno sconto del 20%
 
 // calcolare lo sconto del 20%
-let discount = basePrice * 0.2
+let discount = basePrice * 0.2  // numero
 
 // prezzo scontato = prezzo intero - sconto
 let discountPrice1 = basePrice - discount
-console.log(discountPrice1)
+console.log("Cliente minorenne", discountPrice1)
 if (nEta < 18) {
     console.log("Cliente minorenne", discountPrice1)
 }
 
-// calcolare lo sconto del 40%
-let discount1 = basePrice * 0.4
+// calcolare lo sconto del 40% 
+let discount1 = basePrice * 0.4 // numero
 
 // prezzo scontato = prezzo intero - sconto
-let discountPrice2 = basePrice - discount1
-console.log(discountPrice2)
+let discountPrice2 = basePrice - discount1 // numero
+console.log("Cliente over", discountPrice2)
 // SE è over 65
 //-- si applica uno sconto del 40%
 if (nEta > 65) {
